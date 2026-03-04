@@ -22,6 +22,7 @@ const apiClient = axios.create({
 export const weatherApi = {
   getCurrent: async (query: string, units: Units = 'm', language: string = 'en'): Promise<CurrentWeatherResponse> => {
     if (USE_MOCK_DATA) {
+      console.log('[MOCK] Using mock current weather data for:', query);
       return mockCurrentWeather(query);
     }
     const response = await apiClient.get('/current', {
