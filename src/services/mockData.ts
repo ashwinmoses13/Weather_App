@@ -1,4 +1,4 @@
-import { CurrentWeatherResponse, ForecastResponse, LocationResult, LocationsResponse } from '../types/weather';
+import { CurrentWeatherResponse, ForecastResponse, LocationsResponse } from '../types/weather';
 
 export const mockCurrentWeather = (query: string): CurrentWeatherResponse => ({
   request: {
